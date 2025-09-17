@@ -1,0 +1,73 @@
+@import "tailwindcss";
+/* @font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v36/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoorCFPrEHJA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+} */
+*{
+  scroll-behavior:smooth;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* makes Outlet grow and fill space */
+}
+
+.hero-section .typed-cursor {
+  font-size: 2.2em;
+  color: #b562d6;
+}
+
+.hero-section .typed {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #be6adf;
+}
+/* WavingHand.css */
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2.5s infinite;
+}
+
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(20deg); }
+  20%  { transform: rotate(-10deg); }
+  30%  { transform: rotate(20deg); }
+  40%  { transform: rotate(-5deg); }
+  50%  { transform: rotate(0deg); }   
+  100% { transform: rotate(0deg); }   
+}
+
+.perspective {
+  perspective: 1000px; /* allows the 3D flip */
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.svgAbout{
+  filter: brightness(0) invert(1);
+}
