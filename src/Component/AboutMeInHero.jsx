@@ -28,7 +28,7 @@ const AboutMeInHero = () => {
                         </p>
                         <p>
                             Whenever possible, I also apply my passion for developing products with{" "}
-                            <span className="text-indigo-400 font-semibold">java</span> and{" "}
+                            <span className="text-indigo-400 font-semibold">Java</span> and{" "}
                             <span className="text-indigo-400 italic">Modern Javascript Library and Frameworks</span> like{" "}
                             <span className="text-indigo-400 font-semibold">React.js</span>.
                         </p>

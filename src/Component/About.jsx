@@ -17,8 +17,8 @@ const About = () => {
                     <div className="text-lg tracking-wider">
                         <p className="leading-relaxed">
                             Hi Everyone, I am <span className="text-indigo-400 font-semibold">Satish Kumar </span>
-                            from <span className="text-indigo-400">Noida, India</span>. <br />
-                            I am recently completed my B.Tech in Computer Science from Sagar institute of research and technology Bhopal (2021–2025).
+                            from <span className="text-indigo-400">Bihar, India</span>. <br />
+                            I am recently completed my B.Tech in Computer Science from Sagar Institute Of Research and Technology,Bhopal (2021–2025).
                         </p>
                         <div className="mt-10">
                             <p>
@@ -33,7 +33,7 @@ const About = () => {
                             <blockquote className="italic text-indigo-400 mt-6">
                                 "Strive to build things that make a difference!"
                             </blockquote>
-                            <p className="text-gray-400">— satish</p>
+                            <p className="text-gray-400">— Satish</p>
                         </div>
                     </div>
                 </div>
