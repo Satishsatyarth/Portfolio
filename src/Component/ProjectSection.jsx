@@ -68,7 +68,7 @@ const projects = [
 ];
 
 const ProjectSection = () => {
-  return (
+ return (
     <section className="py-24 bg-gradient-to-r from-gray-900 via-gray-800 to-cyan-600 text-white" id="projects">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
@@ -82,8 +82,8 @@ const ProjectSection = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -136,9 +136,56 @@ const ProjectSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Mobile Carousel */}
+        <div className="block md:hidden">
+            {projects.map((project, index) => (
+              <div key={index} className="p-2">
+                <div className="bg-gray-800/60 rounded-2xl overflow-hidden shadow-lg border border-gray-700 mb-4">
+                  <div className="h-52 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <p className="text-sm text-gray-300 mb-3">{project.description}</p>
+                    <div className="flex gap-3 mb-4">
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-yellow-500 text-black font-medium rounded-lg flex items-center gap-1 text-xs"
+                      >
+                        <FaExternalLinkAlt /> Live
+                      </a>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3 py-1 bg-gray-700 text-white font-medium rounded-lg flex items-center gap-1 text-xs"
+                      >
+                        <FaGithub /> Code
+                      </a>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          
+        </div>
       </div>
     </section>
   );
 };
 
-export default ProjectSection;
+export default ProjectSection; 

@@ -57,10 +57,10 @@ const About = () => {
                     Tools <span className=" text-white">I use</span>
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-15 justify-items-center ">
-                    {["../../public/windows-svgrepo-com.svg",
-                        "../../public/visual-studio-svgrepo-com.svg",
-                        "../../public/eclipseide-svgrepo-com.svg",
-                        "../../public/postman-svgrepo-com.svg",
+                    {["/windows-svgrepo-com.svg",
+                        "/visual-studio-svgrepo-com.svg",
+                        "/eclipseide-svgrepo-com.svg",
+                        "/postman-svgrepo-com.svg",
                     ].map(
                         (tool, i) => (
                             <div

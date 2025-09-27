@@ -2,16 +2,16 @@
 import React from "react";
 
 const skills = [
-  "./../public/html-124-svgrepo-com.svg",
-  "../../public/css3-02-svgrepo-com.svg",
-  "../../public/material-ui-svgrepo-com.svg",
-  "../../public/tailwind-css-svgrepo-com.svg",
-  "../../public/java-script-svgrepo-com.svg",
-  "../../public/java-svgrepo-com.svg",
-  "../../public/react-svgrepo-com.svg",
-  "../../public/dbs-mysql-svgrepo-com.svg",
-  "../../public/github-svgrepo-com.svg",
- 
+  "/html-124-svgrepo-com.svg",
+  "/css3-02-svgrepo-com.svg",
+  "/material-ui-svgrepo-com.svg",
+  "/tailwind-css-svgrepo-com.svg",
+  "/java-script-svgrepo-com.svg",
+  "/java-svgrepo-com.svg",
+  "/react-svgrepo-com.svg",
+  "/dbs-mysql-svgrepo-com.svg",
+  "/github-svgrepo-com.svg",
+
 ];
 
 const ProfessionalSkillset = () => {
@@ -24,9 +24,9 @@ const ProfessionalSkillset = () => {
         {skills.map((skill, i) => (
           <div
             key={i}
-           className="svgAbout p-6 rounded-lg border hover:scale-105 transition-transform"
+            className="svgAbout p-6 rounded-lg border hover:scale-105 transition-transform"
           >
-            <img src={`/${skill}`} alt={skill} className="w-40 h-18 mx-auto" />
+            <img src={`${skill}`} alt={skill} className="w-40 h-18 mx-auto" />
           </div>
         ))}
       </div>

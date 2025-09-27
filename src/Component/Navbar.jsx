@@ -99,7 +99,7 @@ const Navbar = () => {
           {/* Resume button in mobile menu */}
           <li>
             <a
-              href="/resume.pdf"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center px-4 py-2 rounded-lg bg-yellow-400 text-gray-900 font-semibold hover:bg-yellow-300 transition"
