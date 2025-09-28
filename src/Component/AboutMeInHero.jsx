@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import myImage from "../assets/myImage.jpg";
+import SatishProfile from "../assets/SatishProfile.jpeg";
 import avatar from "../assets/avtar.svg";
 const AboutMeInHero = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -69,7 +69,7 @@ const AboutMeInHero = () => {
               {/* Back Image */}
               <div className="absolute w-full h-full rotate-y-180 backface-hidden flex items-center justify-center rounded-full overflow-hidden shadow-lg">
                 <img
-                  src={myImage}
+                  src={SatishProfile}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
